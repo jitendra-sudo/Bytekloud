@@ -1,6 +1,6 @@
 import taskModel from "../models/task.model.js";
 import userModel from "../models/user.model.js";
-import { handleError, handleSuccess } from "../utils/ResponseHandler.js";
+import { handleError, handleSuccess } from "../utils/responseHandler.js";
 
 const addTasks = async (req, res) => {
 	const { task, description, priority } = req.body;
