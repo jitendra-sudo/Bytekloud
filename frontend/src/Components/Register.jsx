@@ -14,7 +14,7 @@ const Register = () => {
 		e.preventDefault();
 		setLoading(true);
 		try {
-			const res = await axios.post("http://localhost:3000/reg", { name, email, password })
+			const res = await axios.post("https://bytekloud.onrender.com/reg", { name, email, password })
 			const data = res.data;
 			if (res.status === 201) {
 				setMessage(data.message || "Registration successful");

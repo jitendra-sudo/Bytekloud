@@ -27,7 +27,7 @@ const AddTask = () => {
 			};
 			let res;
 			if (!updateTask) {
-				res = await axios.post("http://localhost:3000/add", newTask, {
+				res = await axios.post("https://bytekloud.onrender.com/add", newTask, {
 					headers: {
 						Authorization: `Bearer ${accessToken}`
 					}
@@ -36,7 +36,7 @@ const AddTask = () => {
 					setMessage(res.data.message || "Task added successfully");
 				}
 			} else {
-				res = await axios.put("http://localhost:3000/edit", newTask, {
+				res = await axios.put("https://bytekloud.onrender.com/edit", newTask, {
 					headers: {
 						Authorization: `Bearer ${accessToken}`
 					}

@@ -14,7 +14,7 @@ const Dashboard = () => {
 	const fetchData = async () => {
 		setLoading(true)
 		try {
-			const res = await axios.get("http://localhost:3000/all", {
+			const res = await axios.get("https://bytekloud.onrender.com/all", {
 				headers: {
 					Authorization: `Bearer ${accessToken}`,
 				},
@@ -31,7 +31,7 @@ const Dashboard = () => {
 	const onDelete = async (taskId) => {
 		setDeleteId(taskId);
 		try {
-			const res = await axios.delete(`http://localhost:3000/delete/${taskId}`, {
+			const res = await axios.delete(`https://bytekloud.onrender.com/delete/${taskId}`, {
 				headers: {
 					Authorization: `Bearer ${accessToken}`
 				}

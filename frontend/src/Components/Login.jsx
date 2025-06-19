@@ -17,7 +17,7 @@ const Login = () => {
 		e.preventDefault();
 		setLoading(true);
 		try {
-			const res = await axios.post("http://localhost:3000/login", { email, password })
+			const res = await axios.post("https://bytekloud.onrender.com/login", { email, password })
 			const data = res.data;
 			if (res.status === 200) {
 				localStorage.setItem("accessToken", data.accessToken);
