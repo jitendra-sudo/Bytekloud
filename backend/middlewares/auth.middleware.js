@@ -1,4 +1,4 @@
-import { handleError } from "../utils/ResponseHandler.js";
+import { handleError } from "../utils/responseHandler.js";
 import { VerifyToken } from "../utils/tokens.js";
 import dotenv from "dotenv";
 dotenv.config()

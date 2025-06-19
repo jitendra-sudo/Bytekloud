@@ -7,3 +7,4 @@ const options = (key) => {
 	}
 }
 export default options; 
+
