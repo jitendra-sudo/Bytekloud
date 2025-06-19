@@ -6,4 +6,4 @@ const options = (key) => {
 		maxAge: key === "logout" ? 0 : 24 * 60 * 60 * 1000
 	}
 }
-export default options;
+export default options; 
