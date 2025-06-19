@@ -1,5 +1,5 @@
 import userModel from "../models/user.model.js";
-import options from "../utils/Options.js";
+import options from "../utils/options.js";
 import { handleError, handleSuccess } from "../utils/ResponseHandler.js";
 import { generateAccessToken } from "../utils/tokens.js";
 import bcrypt from "bcrypt";
